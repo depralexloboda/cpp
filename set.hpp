@@ -87,8 +87,18 @@ set::set(){
 	head = new Node(0);
 }
 
+void set::recDel(Node* smth){
+	if(smth->L){
+		recDel(smth->L);
+	}
+	if(smth->R){
+		recDel(smth->R);
+	}
+	delete smth;
+}
+
 set::~set(){
-	delete head;
+	recDel(head);
 }
 
 set::iterator set::begin(){

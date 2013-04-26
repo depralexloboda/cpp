@@ -8,6 +8,7 @@ class set{
 	};
 	Node* head;
 	void copy(Node*, Node*);
+	void recDel(Node*);
 public:
 	class iterator{
 		friend class set;
