@@ -13,6 +13,7 @@ public:
 	class iterator{
 		friend class set;
 		Node* link;
+		iterator(Node*);
 	public:
 		iterator& operator++();
 		iterator operator++(int);
@@ -21,7 +22,6 @@ public:
 		int& operator*() const;
 		bool operator==(iterator const&) const;
 		bool operator!=(iterator const&) const;
-		iterator(Node*);
 	};
 	set();
 	~set();
