@@ -1,7 +1,7 @@
 #define BOOST_TEST_MODULE set
 #define BOOST_TEST_MAIN
-#include <boost/test/unit_test.hpp>
-#include "set.hpp"
+#include <boost/test/included/unit_test.hpp>
+#include "set.cpp"
 #include <sstream>
 #include <string>
 
